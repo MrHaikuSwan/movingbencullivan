@@ -1,0 +1,42 @@
+Goals:
+    Get each Test Resources URL for Micro and Macro Units
+    From each above URL, get each AP Question Bank URL (and others desired)
+        -Unit 6 Micro Tax Questions? (skipping)
+            -http://bencullivan.com/APEcon/taxes.htm
+        -Unit 1 Macro is APUSH? (skipping)
+    
+    From each above URL, save all questions and answers (somehow?)
+        -should be done in a way that it can be inputted into Google Forms
+        -that will be really hard, the hardest part of this project b/c
+            currently no Google support for importing question data into Forms
+    
+        Downloaded all URLs and image resources locally as HTML files
+        Parsed HTML files to extract relevant information into JSON files
+    
+    Figure out how to port from JSON with all relevant information into Forms
+    Secondary goal: convert JSON to CSV so CSV can be used in Google Sheets if need be
+        -NO LONGER USEFUL GOAL
+
+Progress:
+    Gotten each Test Resources URL
+    Gotten each AP Question Bank URL
+    
+    Downloaded every single test bank onto computer as HTML w/ answers
+        -in the view where all answers are shown after submitting
+        -decompose HTML into usable quiz format (JSON)
+    
+    Uploaded JSON versions of test banks to Google Drive
+    
+    Wrote function to port JSON format directly into Google Forms
+    
+    Iterated over every JSON file uploaded to create every Google Form
+    
+        
+Parsing HTML Thinking:
+
+need following characteristics:
+    English Question Statement          --string            [COMPLETED]
+    Supplemental Item if available      --image URL         [COMPLETED]
+    English Answer Choices              --list of strings   [COMPLETED]
+    Correct Answer                      --character/integer [COMPLETED]
+    
