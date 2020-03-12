@@ -70,4 +70,5 @@ function JSON2Form(file, currentClass, currentUnit) {
   var formID = form.getId();
   var saveFolder = DriveApp.getFoldersByName('EconTestBankForms').next();
   saveFolder.addFile(DriveApp.getFileById(formID));
+  Logger.log(titleString.concat(' completed'));    //not in original program, but good practice to have
 }
